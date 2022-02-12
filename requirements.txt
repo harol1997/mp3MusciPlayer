@@ -1,3 +1,4 @@
+audioplayer==0.6
 coverage==5.5
 deprecation==2.1.0
 eyed3==0.9.6
