@@ -1,11 +1,14 @@
+from os import path
+from platform import system
+
 from img import Img
 
 PATH_IMG = "img/"
 
 class Setting:
-    PATH_ICON_APP = PATH_IMG + "musicplayer.ico"
-    PATH_IMG_PLAY = PATH_IMG + "play.png"
-    PATH_IMG_PAUSE = PATH_IMG + "pause.png"
-    PATH_IMG_NEXT = PATH_IMG + "next.png"
-    PATH_IMG_BACK = PATH_IMG + "back.png"
-    PATH_IMG_PLAYING = PATH_IMG + "playingmusic.gif"
+    PATH_ICON_APP = path.join(PATH_IMG, "musicplayer.ico") if system() == "Windows" else path.join("@"+PATH_IMG, "musicplayer.xbm")
+    PATH_IMG_PLAY = path.join(PATH_IMG, "play.png")
+    PATH_IMG_PAUSE = path.join(PATH_IMG, "pause.png")
+    PATH_IMG_NEXT = path.join(PATH_IMG, "next.png")
+    PATH_IMG_BACK = path.join(PATH_IMG, "back.png")
+    PATH_IMG_PLAYING = path.join(PATH_IMG, "playingmusic.gif")
