@@ -1,12 +1,5 @@
-audioplayer==0.6
-coverage==5.5
-deprecation==2.1.0
-eyed3==0.9.6
-filetype==1.0.10
-gobject==0.1.0
-packaging==21.3
-Pillow==9.0.1
-pycairo==1.21.0
-PyGObject==3.42.2
-pyparsing==3.0.7
-toml==0.10.2
+ffpyplayer==4.3.5
+PySide6==6.3.2
+PySide6-Addons==6.3.2
+PySide6-Essentials==6.3.2
+shiboken6==6.3.2
