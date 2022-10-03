@@ -1,6 +1,5 @@
-from controller import MainController
-from img import Img
-from setting import Setting
+from controller import AppController
+import setting
 
-main_controller = MainController()
+main_controller = AppController()
 main_controller.run()

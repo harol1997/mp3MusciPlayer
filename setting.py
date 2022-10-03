@@ -1,9 +1,9 @@
 from os import path
 from platform import system
+from pathlib import Path
 
-from img import Img
 
-PATH_IMG = "img/"
+PATH_IMG = Path(__file__).parent / "img"
 
 class Setting:
     PATH_ICON_APP = path.join(PATH_IMG, "musicplayer.ico") if system() == "Windows" else path.join("@"+PATH_IMG, "musicplayer.xbm")
